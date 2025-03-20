@@ -18,6 +18,12 @@ class ShapeTest {
 
     @Test
     public void testRhombus() {   	
+    	Rhombus rhombus = new Rhombus("Rhombus", 6.0, 8.0, 5.0);
+    	assertEquals((6.0*8.0)/2, rhombus.area(),EPSILON);
+    	assertEquals(4*5.0, rhombus.perimeter(),EPSILON);
+    	assertEquals("Shape: Rhombus, Diagonalp: 6.0, Diagonalq: 8.0, Side:5.0", rhombus.toString());
+    	System.out.println(rhombus.toString());
+    	
     }
 
     @Test

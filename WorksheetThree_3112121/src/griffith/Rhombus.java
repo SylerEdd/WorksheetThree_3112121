@@ -22,25 +22,23 @@ public class Rhombus extends Shape{
 		return diagonalq;
 	}
 	
-	public double side() {
+	public double getSide() {
 		return side;
 	}
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (diagonalp*diagonalq) /2;
 	}
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 4*side;
 	}
 	
 	@Override
 	public String toString() {
-		return super.toString()+", Diagonal: "+ diagonalp+ ", Diagonal2: " + diagonalq+ ", Side:" + side;
+		return "Shape: "+getName()+", Diagonalp: "+ diagonalp+ ", Diagonalq: " + diagonalq+ ", Side: " + side;
 	}
 
 }
