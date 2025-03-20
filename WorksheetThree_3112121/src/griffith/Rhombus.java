@@ -7,9 +7,23 @@ public class Rhombus extends Shape{
 	private double diagonalq;
 	private double side;
 
-	public Rhombus(String name) {
+	public Rhombus(String name, double diagonalp, double diagonalq, double side) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		this.diagonalp = diagonalp;
+		this.diagonalq = diagonalq;
+		this.side = side;
+	}
+	
+	public double getDiagonalp() {
+		return diagonalp;
+	}
+	
+	public double getDiagonalq() {
+		return diagonalq;
+	}
+	
+	public double side() {
+		return side;
 	}
 
 	@Override
