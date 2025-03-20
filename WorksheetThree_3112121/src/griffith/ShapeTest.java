@@ -7,8 +7,11 @@ import org.junit.jupiter.api.Test;
 class ShapeTest {
 
 	@Test
-    public void testCircle() {	
-		
+	public void testCircle() {
+        Circle circle = new Circle("Circle", 3.5);
+        assertEquals(Math.PI * 3.5 * 3.5, circle.area(), EPSILON);
+        assertEquals(2 * Math.PI * 3.5, circle.perimeter(), EPSILON);
+        assertEquals("Shape: Circle, Radius: 3.5", circle.toString());
     }
 
     @Test
