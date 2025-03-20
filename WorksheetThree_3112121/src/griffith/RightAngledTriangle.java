@@ -27,18 +27,16 @@ public class RightAngledTriangle extends Shape{
 	
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		return base * height/2;
 	}
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		return base+height+hypotenuse;
 	}
 	
 	@Override
 	public String toString() {
-		return super.toString()+ ", Base: "+ base+", Height: "+ height+ ", Hypotenuse:" + hypotenuse;
+		return "Shape: "+getName()+ ", Base: "+ base+", Height: "+ height+ ", Hypotenuse:" + hypotenuse;
 	}
 }

@@ -21,17 +21,20 @@ class ShapeTest {
     	Rhombus rhombus = new Rhombus("Rhombus", 6.0, 8.0, 5.0);
     	assertEquals((6.0*8.0)/2, rhombus.area(),EPSILON);
     	assertEquals(4*5.0, rhombus.perimeter(),EPSILON);
-    	assertEquals("Shape: Rhombus, Diagonalp: 6.0, Diagonalq: 8.0, Side:5.0", rhombus.toString());
-    	System.out.println(rhombus.toString());
-    	
+    	assertEquals("Shape: Rhombus, Diagonalp: 6.0, Diagonalq: 8.0, Side: 5.0", rhombus.toString());    	
     }
 
     @Test
-    public void testRightAngledTriangle() {    	
+    public void testRightAngledTriangle() {   
+    	RightAngledTriangle triangle = new RightAngledTriangle("Triangle", 3.0, 4.0,5.0);
+    	assertEquals((3.0*4.0)/2, triangle.area(),EPSILON);
+    	assertEquals(3.0+4.0+5.0, triangle.perimeter(),EPSILON);
+    	assertEquals("Shape: Triangle, Base: 3.0, Height: 4.0, Hypotenuse:5.0", triangle.toString());
     }
 
     @Test
     public void testIntegration() {    	
+    	
     }
 
 }
