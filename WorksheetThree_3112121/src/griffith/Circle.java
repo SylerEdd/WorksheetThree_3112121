@@ -20,14 +20,12 @@ public class Circle extends Shape {
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		return Math.PI * radius * radius;
 	}
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 2 * Math.PI * radius;
 	}
 	@Override
 	public String toString() {

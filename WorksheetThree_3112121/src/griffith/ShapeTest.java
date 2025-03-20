@@ -5,7 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class ShapeTest {
-
+	
+	private static final double EPSILON = 0.0001;
+	
 	@Test
 	public void testCircle() {
         Circle circle = new Circle("Circle", 3.5);
